@@ -1,27 +1,49 @@
 # AlgoVision AI
 
-AlgoVision AI is a visual learning platform designed to help students understand algorithms through step-by-step visualization.
+AlgoVision AI is an interactive platform designed to help students understand Data Structures and Algorithms through visual learning.
 
-Features:
-- Sorting and searching algorithm visualizations
-- Step-by-step execution
-- Start / Pause / Next / Prev controls
-- Adjustable animation speed
-- Voice narration explaining algorithm steps
-- Future integration with LLM-based explanation assistant
+The platform visualizes algorithms step-by-step so that users can observe how data changes during execution.
 
-Algorithms currently implemented:
+## Features
+
+• Algorithm visualization using animated bars  
+• Step-by-step explanation of algorithm operations  
+• Start, Pause, Resume, Next, and Previous controls  
+• Adjustable animation speed  
+• Voice narration explaining each step  
+• Level-based learning (Beginner, Intermediate, Pro)
+
+## Algorithms Implemented
+
+Sorting:
 - Bubble Sort
 - Insertion Sort
 - Selection Sort
-- Linear Search
-- Binary Search
 - Merge Sort
 - Quick Sort
+
+Searching:
+- Linear Search
+- Binary Search
+
+Advanced:
 - Graph Traversal
 - Dynamic Programming
 
-Technologies used:
-HTML, CSS, JavaScript, C++
+## Future Work
 
-This project was developed as part of the Design Thinking & Innovation course.
+The next version of the platform will integrate an LLM-based assistant capable of:
+- explaining algorithm behavior
+- answering user questions
+- recommending suitable algorithms for different problems
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- C++
+
+## Visualization Example
+
+![Bubble Sort Visualization](bubble-sort.png)
