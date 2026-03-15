@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble Sort | AlgoVision AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-algo="bubble">
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <button class="back-btn" onclick="window.location.href='index.html'">← Home</button>
+    <h2>BUBBLE SORT</h2>
+</div>
+
+<!-- MAIN WORKSPACE -->
+<div class="workspace">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+
+        <!-- Input -->
+        <div class="input-section">
+            <input id="arrayInput" type="text" placeholder="Enter numbers (e.g. 12,4,5,11)">
+        </div>
+<!-- Search Input (for searching algos) -->
+<input
+    id="searchInput"
+    type="number"
+    placeholder="Enter target value"
+    style="display:none;"
+>
+        <!-- Visualization -->
+        <div id="bars" class="bars-container">
+            <!-- Bars will be drawn here by JS (already exists in your project) -->
+        </div>
+       <div class="controls">
+
+<button onclick="setActiveButton(this); start()">Start</button>
+<button onclick="resume()">Resume</button>
+<button onclick="setActiveButton(this); pause()">Pause</button>
+
+<button onclick="setActiveButton(this); prevStep()">Prev</button>
+
+<button onclick="setActiveButton(this); nextStep()">Next</button>
+
+<button onclick="setActiveButton(this); stop()">Stop</button>
+
+<button id="voiceBtn" onclick="toggleVoice()">🔊 Voice ON</button>
+
+</div>
+        <!-- Speed -->
+        <div class="speed-control">
+    Speed: <span id="speedValue">50%</span>
+    <input id="speed" type="range" min="10" max="100" step="10" value="50">
+</div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+        <!-- Definition -->
+        <div class="definition-box">
+            <h3>📘 What is Bubble Sort?</h3>
+            <p>
+                Bubble Sort is a simple sorting method where we compare two
+                neighboring numbers. If they are in the wrong order, we swap them.
+                In every round, the biggest number slowly moves to the end.
+            </p>
+        </div>
+<!-- Explanation -->
+ <div id="message" class="explain">
+    Press Start to begin.
+</div>
+
+<hr>
+
+<div id="codeBox" class="pseudoBox"></div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

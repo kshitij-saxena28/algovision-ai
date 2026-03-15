@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pro Level - AlgoVision AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1 class="main-title">AIGOVISION<span>.AI</span></h1>
+    <p class="tagline">
+        Advanced Algorithms & Optimization<br>
+        Designed for College Students
+    </p>
+</div>
+<!-- GLOBAL SEARCH -->
+<div class="global-search">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search any topic (e.g. Binary Search, Sorting)"
+        oninput="searchTopics(this.value)"
+    >
+    <div id="searchResults" class="search-results"></div>
+</div>
+<div class="card-grid">
+
+    <div class="algo-card pro" data-page="merge-sort.html">
+        <h3>Merge Sort</h3>
+        <p>Divide and conquer approach with O(n log n) complexity.</p>
+    </div>
+
+    <div class="algo-card pro" data-page="quick-sort.html">
+        <h3>Quick Sort</h3>
+        <p>Partition-based sorting with average O(n log n).</p>
+    </div>
+
+    <div class="algo-card pro" data-page="binary-search.html" >
+        <h3>Binary Search</h3>
+        <p>Efficient searching in sorted arrays.</p>
+    </div>
+
+    <div class="algo-card pro"data-page="graph-traversal.html">
+        <h3>Graph Traversal</h3>
+        <p>BFS and DFS for graph-based problems.</p>
+    </div>
+
+    <div class="algo-card pro"data-page="dynamic-programming.html">
+        <h3>Dynamic Programming</h3>
+        <p>Optimize recursive solutions using memoization.</p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIGOVISION.AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HOME PAGE ================= -->
+<div id="home" style="display:block;">
+
+    <div class="hero">
+        <h1 class="main-title">AIGOVISION<span>.AI</span></h1>
+        <p class="tagline">
+            Learn Data Structures & Algorithms Visually<br>
+            Understand how code really works.
+        </p>
+    </div>
+<!-- GLOBAL SEARCH -->
+<div class="global-search">
+    <input 
+        type="text" 
+        id="searchInput"
+        placeholder="Search any topic (Bubble Sort, Binary Search...)"
+        oninput="searchTopics(this.value)"
+    >
+    <div id="searchResults" class="search-results"></div>
+</div>
+    <div class="home-container">
+
+        <section class="home-about">
+            <h2>About AlgoVision AI</h2>
+            <p>
+                AlgoVision AI is an interactive platform designed to help students
+                understand Data Structures and Algorithms through visual learning.
+                Choose your level and master algorithms step by step.
+            </p>
+        </section>
+
+        <section class="level-selection">
+            <h2>
+    What kind of topics do you feel like learning today?
+</h2>
+<p style="opacity:0.8; margin-top:8px;">
+    You can always explore other levels later.
+</p>
+            <div class="level-options">
+    <button class="level-btn" onclick="goToLevel('beginner')">Beginner</button>
+    <button class="level-btn" onclick="goToLevel('intermediate')">Intermediate</button>
+    <button class="level-btn" onclick="goToLevel('pro')">Pro</button>
+</div>
+        </section>
+<section class="quiz-option">
+    <p>Not sure about your level?</p>
+    <button class="quiz-btn" onclick="openQuiz()">Take Quiz</button>
+</section>
+
+<!-- QUIZ FLOATING BOX -->
+<div id="quiz-overlay"></div>
+
+<div id="quiz-box" class="quiz-float">
+    <div class="quiz-header">
+        <span>Level Quiz</span>
+        <button onclick="closeQuiz()">✕</button>
+    </div>
+
+    <div class="quiz-body">
+        <div class="quiz-question">
+            <p>1. Have you studied algorithms before?</p>
+            <select id="q1">
+                <option value="">Select</option>
+                <option value="0">No</option>
+                <option value="1">A little</option>
+                <option value="2">Yes</option>
+            </select>
+        </div>
+
+        <div class="quiz-question">
+            <p>2. Can you explain what sorting means?</p>
+            <select id="q2">
+                <option value="">Select</option>
+                <option value="0">No</option>
+                <option value="1">Basic idea</option>
+                <option value="2">Yes clearly</option>
+            </select>
+        </div>
+
+        <div class="quiz-question">
+            <p>3. Do you know time complexity?</p>
+            <select id="q3">
+                <option value="">Select</option>
+                <option value="0">No</option>
+                <option value="1">Heard of it</option>
+                <option value="2">Yes</option>
+            </select>
+        </div>
+
+        <button class="quiz-submit" onclick="submitQuiz()">Submit</button>
+    </div>
+</div>
+    </div>
+</div>
+<!-- ================= ALGORITHM PAGE (UNCHANGED, IGNORE FOR NOW) ================= -->
+<div id="app" style="display:none;">
+
+    <div class="top-bar">
+        <button class="back-btn">← Home</button>
+        <h2 id="title"></h2>
+    </div>
+
+    <div class="workspace">
+
+        <div class="left-panel">
+
+            <div class="input-section">
+                <input id="arrayInput" type="text" placeholder="Enter numbers (e.g. 5,2,8,1)">
+                <input id="searchInput" type="text" placeholder="Search value">
+            </div>
+
+            <div id="bars" class="bars-container"></div>
+<div class="controls">
+
+<button onclick="setActiveButton(this); start()">Start</button>
+<button onclick="resume()">Resume</button>
+<button onclick="setActiveButton(this); pause()">Pause</button>
+
+<button onclick="setActiveButton(this); prevStep()">Prev</button>
+
+<button onclick="setActiveButton(this); nextStep()">Next</button>
+
+<button onclick="setActiveButton(this); stop()">Stop</button>
+
+<button onclick="toggleVoice()" id="voiceBtn">🔊 Voice ON</button>
+
+</div>
+
+            <div class="speed-control">
+                Speed:
+                <input type="range" min="1" max="20" value="5">
+            </div>
+
+        </div>
+
+        <div class="right-panel panel">
+            <div class="definition-box">
+                Select an algorithm to see its definition.
+            </div>
+
+            <div class="explain">
+                Choose an algorithm and press Start.
+            </div>
+
+            <hr>
+
+            <div class="pseudoBox"></div>
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

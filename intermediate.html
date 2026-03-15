@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intermediate Level - AlgoVision AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1 class="main-title">AIGOVISION<span>.AI</span></h1>
+    <p class="tagline">
+        Learn Data Structures & Algorithms Visually<br>
+        Designed for Class 11–12 Students
+    </p>
+</div>
+<!-- GLOBAL SEARCH -->
+<div class="global-search">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search any topic (e.g. Binary Search, Sorting)"
+        oninput="searchTopics(this.value)"
+    >
+    <div id="searchResults" class="search-results"></div>
+</div>
+<div class="card-grid">
+
+    <div class="algo-card" data-page="bubble-sort.html">
+        <h3>Bubble Sort</h3>
+        <p>Watch numbers bubble to their correct positions.</p>
+    </div>
+
+    <div class="algo-card" data-page="insertion-sort.html">
+        <h3>Insertion Sort</h3>
+        <p>Insert elements into their proper place step by step.</p>
+    </div>
+
+    <div class="algo-card" data-page="selection-sort.html">
+        <h3>Selection Sort</h3>
+        <p>Find the smallest element in each round.</p>
+    </div>
+
+    <div class="algo-card" data-page="linear-search.html">
+        <h3>Linear Search</h3>
+        <p>Search each element one by one.</p>
+    </div>
+
+    <div class="algo-card" data-page="binary-search.html">
+        <h3>Binary Search</h3>
+        <p>Divide the array in half to search faster.</p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

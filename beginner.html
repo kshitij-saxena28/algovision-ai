@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beginner Level - AlgoVision AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1 class="main-title">AIGOVISION<span>.AI</span></h1>
+    <p class="tagline">
+        Learn Algorithms the Fun Way 🎈<br>
+        Made for Class 5–6 Students
+    </p>
+</div>
+<!-- GLOBAL SEARCH -->
+<div class="global-search">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search any topic (e.g. Binary Search, Sorting)"
+        oninput="searchTopics(this.value)"
+    >
+    <div id="searchResults" class="search-results"></div>
+</div>
+
+<div class="card-grid">
+
+    <div class="algo-card beginner">
+        <h3>What is Sorting?</h3>
+        <p>Arrange numbers from small to big like arranging toys.</p>
+    </div>
+
+    <div class="algo-card beginner" data-page="bubble-sort.html">
+        <h3>Bubble Sort</h3>
+        <p>Bigger numbers slowly move up like bubbles in water.</p>
+    </div>
+
+    <div class="algo-card beginner">
+        <h3>What is Searching?</h3>
+        <p>Finding your name in an attendance list.</p>
+    </div>
+
+    <div class="algo-card beginner" data-page="linear-search.html">
+        <h3>Linear Search</h3>
+        <p>Check each number one by one until you find it.</p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
