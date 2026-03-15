@@ -46,4 +46,4 @@ The next version of the platform will integrate an LLM-based assistant capable o
 
 ## Visualization Example
 
-![Bubble Sort Visualization](bubble-sort.png)
+![Bubble Sort Visualization](bubble_sort.png)
